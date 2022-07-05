@@ -144,7 +144,7 @@ def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_la
         coor[1] = int(coor[1] * image_w)
         coor[3] = int(coor[3] * image_w)
 
-        fontScale = 0.5
+        fontScale = 2     # 0.5
         score = out_scores[0][i]
         class_ind = int(out_classes[0][i])
         bbox_color = colors[class_ind]
